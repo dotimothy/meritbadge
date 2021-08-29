@@ -5,9 +5,8 @@ def debugThis():
     c = "bc" + '(s)'
     result = a + b + c
     print("Result is " + result + ", Program is Successful")
-
-debugThis()
-#try:
-   #debugThis()
-#except TypeError:
-    #print("Program is not successful")
+    
+try:
+   debugThis()
+except TypeError:
+    print("Program is not successful")
