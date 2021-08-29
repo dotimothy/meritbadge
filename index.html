@@ -18,8 +18,8 @@
 
 <script>
 	function hideEverything() {
-		document.querySelector("h1").hidden = true;
-		document.querySelector("h2").hidden =  true;
+		document.querySelector("h1").hidden = !document.querySelector("h1").hidden;
+		document.querySelector("h2").hidden =  !document.querySelector("h2").hidden;
 	}
 </script>
 
