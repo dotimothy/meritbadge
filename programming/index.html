@@ -1,0 +1,53 @@
+<!--Author: Timothy Do -->
+<!-- Programming Merit Badge Website -->
+<!DOCTYPE html>
+
+<head>
+	<title>Hello World</title>
+</head>
+
+<!--This Tag is for Inline CSS -->
+<style>
+	h1,h2 {
+		font-family: Courier;
+	}
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		font-size:  2em;
+	}
+	body {
+		background-image:  url("https://dotimothy.github.io/images/doge.png");
+		background-color: yellow;
+		background-size:  128px 128px;
+	}
+</style>
+
+<!--This Tag is for Inline JS -->
+<script>
+	//this function hides everything
+	function hideEverything() {
+		document.querySelector("h1").hidden = !document.querySelector("h1").hidden;
+		document.querySelector("h2").hidden =  !document.querySelector("h2").hidden;
+		document.querySelector("img").hidden = !document.querySelector("img").hidden;
+	}
+</script>
+
+<body onclick="hideEverything()">
+	<h1>Hello World!</h1>
+<!--
+	<img src="https://dotimothy.github.io/images/doge.png">
+-->
+	<h2>This is for the Programming Merit Badge Session</h2>
+	
+	<a href="./HelloWorld.py" target="_blank"><h1>HelloWorld.py</h1></a>
+
+	<a href="./debug.py" target="_blank"><h1>debug.py (solved)</h1></a>
+
+	<a href="./khoa.html" target="_blank"><h1>khoa.html</h1></a>
+	
+	<img width="50%" src="https://dotimothy.github.io/images/doge.png">
+</body>
+
+</html>

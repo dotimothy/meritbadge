@@ -1,53 +1,91 @@
-<!--Author: Timothy Do -->
-<!-- Programming Merit Badge Website -->
-<!DOCTYPE html>
+<!doctype html>
+
+<html>
 
 <head>
-	<title>Hello World</title>
+	<title>Timothy Do's Merit Badges</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8" />
 </head>
 
-<!--This Tag is for Inline CSS -->
+<base target="_blank">
+
 <style>
-	h1,h2 {
-		font-family: Courier;
-	}
-	h1 {
-		font-size: 5em;
-	}
-	h2 {
-		font-size:  2em;
+	* {
+		font-family: Product Sans;
 	}
 	body {
-		background-image:  url("https://dotimothy.github.io/images/doge.png");
+		background-color: black;
+	}
+	h1,h2 {
+		color: white;
+	}
+	a {
+		color:  blue;
+	}
+	a:hover {
+		color: yellow;
+		transition: 0.25s;
+	}
+	.pfp {
+		clip-path:  circle();
+		margin-left:  auto;
+		margin-right:  auto;
+		display: block;
+		transition: 0.25s;
+	}
+	.pfp:hover {
+		transform: scale(2.5) translateY(50%);
+		transition: 0.25s;
+	}
+	.center {
+		margin: auto;
+		border-radius: 50px;
+		padding: 0.5em;
+		text-align: center;
+	}
+	.box {
+		border: 0.25em solid yellow;
 		background-color: yellow;
-		background-size:  128px 128px;
+		padding: 0.5em;
+		margin-bottom: 1em;
+	}
+	.box:hover {
+		background-color: white;
+		border: 0.25em solid white;
+		transition: 0.25s;
+	}
+	/* Desktop */
+	@media only screen and (min-width: 1000px) {
+		h1 { font-size:  3em; }
+		h2 { font-size:  2.5em; }
+		.center { width: 50%; }
+		.pfp { width: 30%; }
+	}
+	/* Mobile */
+	@media only screen and (max-width: 1000px) {
+		h1 { font-size: 5em; }
+		h2 { font-size:  4em; }
+		.center { width: 75%; }
+		.pfp { width: 50%; }
 	}
 </style>
 
-<!--This Tag is for Inline JS -->
-<script>
-	//this function hides everything
-	function hideEverything() {
-		document.querySelector("h1").hidden = !document.querySelector("h1").hidden;
-		document.querySelector("h2").hidden =  !document.querySelector("h2").hidden;
-		document.querySelector("img").hidden = !document.querySelector("img").hidden;
-	}
-</script>
-
-<body onclick="hideEverything()">
-	<h1>Hello World!</h1>
-<!--
-	<img src="https://dotimothy.github.io/images/doge.png">
--->
-	<h2>This is for the Programming Merit Badge Session</h2>
-	
-	<a href="./HelloWorld.py" target="_blank"><h1>HelloWorld.py</h1></a>
-
-	<a href="./debug.py" target="_blank"><h1>debug.py (solved)</h1></a>
-
-	<a href="./khoa.html" target="_blank"><h1>khoa.html</h1></a>
-	
-	<img width="50%" src="https://dotimothy.github.io/images/doge.png">
+<body>
+	<div class="center">
+		<img class="pfp" src="./images/EagleScout.jpg" alt="EagleScout">
+		<h1>⚜️ <a href="https://timothydo.me">Timothy Do</a>'s Merit Badge Courses ⚜️</h1>
+	</div>
+	<div class="center box">
+		<h2>🌐<a href="https://docs.google.com/presentation/d/e/2PACX-1vQVt4fwcU5OGPqqmz3guiUB3OQQOrsKZU9uOlpxi6pjrWEZ0dCHpECKoM8Hb_D8M50b5E_mYbVL7KHe/pub?start=false&loop=false&delayms=60000">Digital Technology</a></h2>
+	</div>
+	<div class="center box">
+		<h2>🎶<a href="https://docs.google.com/presentation/d/e/2PACX-1vS-1xE_fqYWMhWOXQ2HouM3SwT2v0iLpSCFSfPNTEKAUC8y0u49cJVfwvStaJhXSj6LBFKHDp4rM7ii/pub?start=false&loop=false&delayms=60000">Music</a></h2>
+	</div>
+	<div class="center box">
+		<h2>👨‍💻<a href="https://docs.google.com/presentation/d/e/2PACX-1vSDLRYA71VCPtvmMvul87Jp1GDcgOxgIH4ME_FYWGTmW9ztG8kyfBJ-jCrFFjnqVkF6VGs9_qlNF9OD/pub?start=false&loop=false&delayms=60000">Programming</a></h2>
+	</div>
 </body>
 
 </html>
